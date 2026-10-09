@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <title>The Cacao Pair Backup | Private backup utility</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, -apple-system, Segoe UI, sans-serif; background:#130d0b; color:#f7ece0; }
+    * { box-sizing: border-box; } body { margin:0; line-height:1.65; }
+    .shell { max-width:860px; margin:0 auto; padding:32px 24px 80px; }
+    header { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; align-items:center; border-bottom:1px solid #58422d; padding-bottom:22px; }
+    .brand {font-weight:700;letter-spacing:.04em;} a {color:#e6bd7b;} nav a {margin-left:20px;} h1 {font-size:clamp(2.2rem,6vw,4rem);line-height:1.15;margin:68px 0 22px;} h2 {margin-top:40px;color:#f0ce93;}
+    p,li {color:#d6c6b8;} .tag {text-transform:uppercase;letter-spacing:.2em;font-size:.8rem;color:#e6bd7b;}
+    .panel {padding:24px;border:1px solid #58422d;border-radius:16px;background:#201612;margin-top:30px;} footer{margin-top:64px;padding-top:20px;border-top:1px solid #58422d;font-size:.9rem;}
+  </style>
+</head>
+<body>
+ <div class="shell">
+  <header><div class="brand">THE CACAO PAIR / BACKUP</div><nav><a href="./">Home</a><a href="privacy.html">Privacy policy</a></nav></header>
+  <main>
+   <h1>Private backup utility for The Cacao Pair.</h1>
+   <p>This is an owner-operated utility for preparing, encrypting, and storing recovery backups of The Cacao Pair's website data. It is not a customer-facing product or a general-purpose cloud-storage application.</p>
+   <div class="panel"><div class="tag">Purpose</div><h2>Designed for recovery</h2><p>The planned backup workflow uses PostgreSQL exports, Rclone encryption, and a dedicated Google Drive folder. Backup automation and full database restore testing are still being configured; they are not represented here as already active.</p></div>
+   <h2>Google Drive access</h2>
+   <p>The utility requests Google's <code>drive.file</code> permission so it can create and manage files used with this application, rather than access all files in a Google account. Google authorization can be revoked through your Google Account settings.</p>
+   <h2>Privacy and data handling</h2>
+   <p>Read our <a href="privacy.html">privacy policy</a> for details about the data the utility accesses, encryption, storage, access controls, and retention.</p>
+  </main>
+  <footer>Independent owner-operated backup utility for The Cacao Pair. No credentials, backups, or customer records are hosted on this information site.</footer>
+ </div>
+</body>
+</html>
